@@ -1,0 +1,40 @@
+<% include partials/head.ejs %>
+
+<div id="hero-image-single" style="background-image: url('/images/<%= event.hero_image %>')">
+	<h1 id="hero-title"><%= title %></h1>
+</div>
+
+
+	<div class="content-padding clearfix">
+		<div class="poster-wrapper">
+			<img src="/images/<%= event.poster %>" alt="<%= event.title %>" class="img-responsive" />
+		</div>
+
+		<div class="description-wrapper">
+			<div class="description">
+				<h2 class="event-header">Description</h2>
+				<p>
+					<%= event.description %>
+				</p>
+			</div>
+
+			<% if(event.events.length > 0){ %>
+			<div class="main-characters">
+				<h2 class="event-header">Events</h2>
+				<ul>
+					<% for (var x = 0; x < event.events.length; x++) { %>
+						<li>
+							<strong><%= event.events[x].name %></strong> : <%= event.events[x].description %>
+						</li>
+						<% } %>
+				</ul>
+			</div>
+			<% } %>
+		</div>
+	</div>
+
+
+	<% include partials/footer.ejs %>
+		<% include partials/scripts.ejs %>
+	</body>
+  </html>

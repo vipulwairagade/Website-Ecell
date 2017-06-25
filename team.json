@@ -1,0 +1,61 @@
+{
+  "team": [
+  {
+    "name" : "Shreyosi Dhali",
+    "position" : "President",
+    "linkedin" : "#",
+    "image" : "ipad.png"
+  },
+  {
+    "name" : "Farzan Shaikh",
+    "position" : "Treasurer",
+    "linkedin" : "#",
+    "image" : "ipad.png"
+  },
+  {
+    "name" : "Meghna Bhave",
+    "position" : "Public Relations and Operations",
+    "linkedin" : "#",
+    "image" : "ipad.png"
+  },
+  {
+    "name" : "Mukul Parashar",
+    "position" : "Public Relations and Operations",
+    "linkedin" : "#",
+    "image" : "ipad.png"
+  },
+  {
+    "name" : "Milind Meena",
+    "position" : "Public Relations and Operations",
+    "linkedin" : "#",
+    "image" : "ipad.png"
+  },
+  {
+    "name" : "Brahmdutt Sharma",
+    "position" : "Corporate Relations",
+    "linkedin" : "#",
+    "image" : "ipad.png"
+  },
+
+  {
+    "name" : "M. Vishnu",
+    "position" : "Corporate Relations",
+    "linkedin" : "#",
+    "image" : "ipad.png"
+  },
+  {
+    "name" : "Hemant Agrawal",
+    "position" : "Events and Planning",
+    "linkedin" : "#",
+    "image" : "ipad.png"
+  },
+
+  {
+    "name" : "Utkarsh Gupta",
+    "position" : "Events and Planning",
+    "linkedin" : "#",
+    "image" : "ipad.png"
+  }
+]
+
+}

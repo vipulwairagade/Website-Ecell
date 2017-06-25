@@ -1,0 +1,32 @@
+{
+  "events":[
+		{
+			"title": "Flagship",
+			"start": {
+				"date": 20170803,
+				"time": "18.00"
+			},
+			"end": {
+				"date": 20170803,
+				"time": "21.30"
+			},
+			"location": "Nagpur",
+			"url": "http://www.google.com",
+			"color": "yellow"
+		},
+    {
+			"title": "Social Media Marketing Workshop by Yash Chawla",
+			"start": {
+				"date": 20170812,
+				"time": "18.00"
+			},
+			"end": {
+				"date": 20170812,
+				"time": "21.30"
+			},
+			"location": "Nagpur",
+			"url": "http://www.google.com",
+			"color": "yellow"
+		}
+	]
+}

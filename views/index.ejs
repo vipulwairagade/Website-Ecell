@@ -1,0 +1,219 @@
+<% include partials/head%>
+<link rel="stylesheet" href="/stylesheets/css/kalendar.css"/>
+  <!-- Header -->
+  <a name="about"></a>
+  <div class="intro-header">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="intro-message">
+            <h2>The Entrepreneurship Cell</h2>
+            <h3>VNIT, Nagpur</h3>
+            <hr class="intro-divider">
+            <ul class="list-inline intro-social-buttons">
+              <li>
+                <a href="https://www.facebook.com/vnitecell/" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/ecellvnit/" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company-beta/6615520/" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+              </li>
+            </ul>
+            <h4><br><br>Registrations for Campus Ambassador Programme'17-18 are now open!</h4>
+            <hr class="intro-divider">
+              <a href="#" class="btn btn-default btn-lg"><span class="network-name">Apply Now!</span></a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+  </div>
+  <!-- /.intro-header -->
+
+  <!-- Page Content -->
+
+  <a name="services"></a>
+  <div class="content-section-a">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-sm-6">
+          <hr class="section-heading-spacer">
+          <div class="clearfix"></div>
+          <h2 class="section-heading">Upcoming Events</h2>
+          <ul>
+            <li><strong>August 3,2017 </strong>: Flagship </li>
+            <li><strong>August 21,2017 </strong>: Social Media Marketing Workshop by Yash Chawla </li>
+          </ul>
+        </div>
+        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+          <!-- Calendar -->
+          <div class="kalendar"></div>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-section-a -->
+
+  <div class="content-section-b">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+          <hr class="section-heading-spacer">
+          <div class="clearfix"></div>
+          <h2 class="section-heading">About ECell<br></h2>
+          <p class="lead">The Entrepreneurship Cell is a non-profit organization run by the students of VNIT, Nagpur. It aims at a holistic development of all its members through round the year events such as ‘Startup Weekend’ powered by Google for Entrepreneurs, Mozilla Web Design workshop, and ‘Jugaad!’. E-Cell also supports and incubates many startups.</p>
+
+        </div>
+        <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+          <img class="img-responsive" src="/images/dog.png" alt="">
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+  </div>
+  <!-- /.content-section-b -->
+
+  <div class="content-section-a">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-5 col-sm-6">
+          <hr class="section-heading-spacer">
+          <div class="clearfix"></div>
+          <h2 class="section-heading">Campus Ambasssadors'17-18<br>Registrations Open!</h2>
+          <button class="btn btn-primary" href="#">Apply Now!</button>
+          <p class="lead"></br>To know more, click <a target="_blank" href="/ca">here</a>.</p>
+        </div>
+        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+          <img class="img-responsive" src="/images/phones.png" alt="">
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+  </div>
+  <!-- /.content-section-a -->
+
+  <a name="contact"></a>
+  <div class="banner">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>Connect to Us:</h2>
+        </div>
+        <div class="col-lg-6">
+          <ul class="list-inline intro-social-buttons">
+            <li>
+              <a href="https://www.facebook.com/vnitecell/" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/ecellvnit/" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company-beta/6615520/" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+  </div>
+  <!-- /.banner -->
+
+  <!-- Footer -->
+
+  <!-- jQuery -->
+
+  <% include partials/footer.ejs %>
+    <% include partials/scripts.ejs %>
+  <script src="/js/kalendar.js" type="text/javascript"></script>
+
+<!-- END WWW.ERICWENN.SE SPECIFIC -->
+<script>
+$(document).ready(function() {
+	$('.kalendar').kalendar({
+
+	// Events are objects, placed inside of an array
+	events: [<% upcoming.forEach(function(each){ %>
+		{
+			title: "<%= each.title %>",
+			start: {
+				date: "<%= each.start.date %>",	// "20131230"
+				time: "<%= each.start.time %>"					// "12.00"
+			},
+			end: {
+				date: "<%= each.end.date %>",	// "20131230"
+				time: "<%= each.end.time %>"					// "20.00"
+			},
+			location: "<%= each.location %>",				// "London"
+			url: "<%= each.url %>",					// "http://example.com"
+			color: "<%= each.color %>"						// "red" string containing reference to the eventcolorsobject
+		},
+    <% }) %>
+	],
+	// Custom colorsets to set a specific color to an event. If one of the three variables isn’t set the inherit value will be used.
+	eventcolors: {
+		yellow: {
+			background: "#FC0",					// Backgroundcolor, optional
+			text: "#000",						// Text color, optional
+			link: "#000"						// Link color, optional
+		}
+	},
+
+	// Currently available colors are: red, blue, green, yellow. Red is the default.
+	color: "blue",
+
+	// Default is Monday, but any day of the week is applicable.
+	firstDayOfWeek: "Sunday",
+
+	// Google Calendar reference are objects, place inside of an array to support multiple calendars.
+	// If you are unsure how to get an API-key visit: https://developers.google.com/google-apps/calendar/firstapp
+	// If you are unsure how to get your calendar visit: https://support.google.com/calendar/answer/63962?hl=en
+
+	// Any name is possible, but note that not all names might fit in the UI
+
+	//monthHuman: [["JAN","January"],["FEB","February"], etc... ],
+
+	// Regarding name lengths same applies here
+
+	//dayHuman: [["S","Sunday"],["M","Monday"], etc... ],
+
+	// The text which represents links for events
+
+	urlText: "View on Web",
+
+	// Callbackevents will be fired when a certain criteria is met. The following are the currently supported events
+
+	onInitiated: function() {},					// After the kalendar have been fully initiated. E.g when everything is loaded
+	onGoogleParsed: function() {},				// After Google Calendar events, if they exist, have been parsed
+	onMonthChanged: function() {},				// After events passed to the plugin have been parsed
+	onDayShow: function() {},					// When a specific day have started to load. E.g when a day with an event attached to it is clicked
+	onGridShow: function() {},					// When the grid of days have started to load. E.g when a specific dayview have been cancelled
+	onDayClick: function(e) {},				// When a day gets clicked, no matter if it contains any event or not. Passed to this function is whether the day 												 is from this month or if it’s the current day. This can be accessed in the variable e.data.info
+
+	// I decided to track people using this plugin in order to make it even better.
+	// The things I collect are current URL, color or kalendar, whether you decided to show days or not and your selected first day of the week.
+	// Pass this variable as false and no tracking whatsoever will be done.
+	// ***TRUE IS SET AS DEFAULT***
+	tracking: true
+});
+
+});
+</script>

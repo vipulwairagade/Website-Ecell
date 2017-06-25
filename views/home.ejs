@@ -1,0 +1,25 @@
+<% include partials/head.ejs %>
+
+<div id="hero-image">
+	<h1 id="hero-title"><%= title %></h1>
+</div>
+
+<div id="posters-wrapper" class="content-padding clearfix">
+<% for (var x = 0; x < events.length; x++) { %>
+	<div class="poster">
+		<a href="/star_wars_episode/<%= events[x].episode_number %>">
+			<img src="/images/<%= events[x].poster %>" alt="<%= events[x].title %>" class="img-responsive"/>
+
+			<div class="poster-info-overlay">
+				<h3><%= events[x].title %></h3>
+				<h4>View more <i class="fa fa-arrow-right"></i></h4>
+			</div>
+		</a>
+	</div>
+<% } %>
+</div>
+
+<% include partials/footer.ejs %>
+<% include partials/scripts.ejs %>
+</body>
+</html>

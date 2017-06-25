@@ -1,0 +1,39 @@
+{
+  "events": [{
+    "title" : "Flagship",
+    "episode_number" : "1",
+    "events" : [],
+    "description" : "All aboard the voyage that is E-cell, that is ready to take over the winds of technical brute hitting against the forces of business acumen. Flagship will be the inaugural fresco of VNIT’s Entrepreneurship cell bringing to you three diverse intellectuals: A businessman, a technologist and a writer, speaking to empower today’s youth and running talent alike.",
+    "poster" : "star_wars_episode_1_poster.png",
+    "hero_image" : "flagship_hero.jpg"
+  },
+
+  {
+    "title" : "Jugaad",
+    "episode_number" : "2",
+    "events" : [],
+    "description" : "In this age of innovation, making lemonade out of life's lemons is outdated, not to mention clichéd. ‘Jugaad!’ is a one-of a kind event where your ideas run WILD! All we want is a team of four capitalizing on a hundred rupee note (now, that’s your lemon!). Flaunt those skills which we Indians take pride in. Venture out in the sun. Be a Jugaadu!",
+    "poster" : "star_wars_episode_2_poster.png",
+    "hero_image" : "star_wars_episode_2_hero.jpg"
+  },
+
+  {
+    "title" : "Consortium",
+    "episode_number" : "3",
+    "events" : [{"name":"Pitch Perfect","description":"Speak"},{"name":"Swades","description":"Village"},{"name":"Ascent","description":"BPlan"},{"name":"Bizmantra","description":"Sell"}],
+    "description" : "Consortium is the Annual Entrepreneurship Summit of VNIT Nagpur comprising of events like Pitch Perfect, Bizmantra and Swades. The summit aims at fueling entrepreneurial attitude amongst students through healthy competition and exciting challenges. It fosters the importance of leadership and decision making and introduces young technocrats to various management practices in the corporate world.",
+    "poster" : "star_wars_episode_3_poster.png",
+    "hero_image" : "star_wars_episode_3_hero.jpg"
+  },
+
+  {
+    "title" : "Startup Weekend",
+    "episode_number" : "4",
+    "events" : [],
+    "description" : "Want to know what this start-up boom is all about? You are curious enough to admit wondering how start-ups well... start, and would go one step further to imagine being at the apex of your own. Here’s your redemption! 54 hours, a floor of rivals all rushing with their strategies and productizing potential, developing a fully functional startup and feeling the thrill of the industrial revolution at their very fingertips, this is where you could be. The buck stops here, with an experience of a B-time!",
+    "poster" : "star_wars_episode_4_poster.png",
+    "hero_image" : "star_wars_episode_4_hero.jpg"
+  }
+]
+
+}
